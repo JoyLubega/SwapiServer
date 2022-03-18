@@ -7,6 +7,7 @@ const starWarsAPI = require("./data/people");
 const server = new ApolloServer({
   typeDefs,
   resolvers,
+  playground: true,
   dataSources: () => ({
     starWarsAPI: new starWarsAPI(),
   }),
